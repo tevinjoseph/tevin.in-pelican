@@ -36,7 +36,7 @@ COVER_IMG_URL = 'https://scontent-a-lga.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/15261
 PROFILE_IMAGE_URL = 'https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10157186_658152540898781_7445448101037810379_n.jpg?oh=7bbd0644a226962d6015b69141cbc4ab&oe=550281BC&__gda__=1427357654_0634af07603f4a7d905940f8775c24c9'
 
 DEFAULT_PAGINATION = 10
-
+DISQUS_SITENAME ='tevinjosephko'
 RELATIVE_URLS = True
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['gravatar']
