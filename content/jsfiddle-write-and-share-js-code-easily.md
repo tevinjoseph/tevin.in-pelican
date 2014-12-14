@@ -1,7 +1,7 @@
 Title: JSFiddle - Write and share JS easily
 Date: 2014-05-01 10:00 
-Category: Python 
-Tags: python  
+Category: Programming, Javascript, jQuery
+Tags: Programming, Javascript, jQuery  
 Author: Tevin
 Email:	 tevinjosephko@gmail.com
 Summary: JavaScript is the backbone of front-end developers. In fact, knowledge in JavaScript is an added advantage for every web developer. Need some tool/website for trying out JavaScript? Need a site which can be used for sharing your js code? A site that can be used to edit js code by multiple persons simultaneously? All in one, check out [jsfiddle.net](http://jsfiddle.net) :)
