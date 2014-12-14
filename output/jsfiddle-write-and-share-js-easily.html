@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tevin's Views, ">
+
+
+        <title>JSFiddle - Write and share JS easily // Tevin's Views // </title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./theme/css/pure.css">
+    <link rel="stylesheet" href="./theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="./author/tevin.html" title="See posts by Tevin">
+                        <img class="avatar" alt="Tevin" src="http://www.gravatar.com/avatar/2fec3b6b252e9b7b73960e15861a623b">
+                </a>
+                <h2 class="article-info">Tevin</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Thu 01 May 2014</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>JSFiddle - Write and share JS easily</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="./tag/python.html">python</a>
+                        </p>
+                </header>
+            </section>
+            <p>JavaScript is the backbone of front-end developers. In fact, knowledge in JavaScript is an added advantage for every web developer. Need some tool/website for trying out JavaScript? Need a site which can be used for sharing your js code? A site that can be used to edit js code by multiple persons simultaneously? All in one, check out <a href="http://jsfiddle.net">jsfiddle.net</a> :)</p>
+<p>You can edit your js code and can share the code by a unique URL using jsfiddle. On the left side of the site, you can select the library you want to use and there are separate boxes for editing HTML, CSS and JS. Here is an example fiddle using jQuery.</p>
+<p><a href="http://jsfiddle.net/fxoc1a20/">jsfiddle.net/fxoc1a20/</a></p>
+<p>Using collaboration, you can invite multiple persons to edit your code. Moreover, the site has support for almost all front-end libraries/frameworks. It supports jQuery, Dojo, ember.js, angular js, underscore.js, Extjs, prototype.js and a lot more. Give it a try, I’m sure, jsfiddle won’t disappoint you. </p>
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Tevin's Views &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
