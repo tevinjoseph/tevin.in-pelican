@@ -70,6 +70,6 @@ Google is part of everyone’s life.  Especially people who are working in softw
 
 Happy googling :)
 
-For more information, go to https://support.google.com/websearch/answer/134479?hl=en
+For more information, go to [https://support.google.com/websearch/answer/134479?hl=en](https://support.google.com/websearch/answer/134479?hl=en)
 
 

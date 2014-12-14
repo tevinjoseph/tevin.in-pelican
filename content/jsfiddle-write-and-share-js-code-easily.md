@@ -1,6 +1,6 @@
 Title: JSFiddle - Write and share JS easily
 Date: 2014-05-01 10:00 
-Category: Programming, Javascript, jQuery
+Category: Javascript
 Tags: Programming, Javascript, jQuery  
 Author: Tevin
 Email:	 tevinjosephko@gmail.com
