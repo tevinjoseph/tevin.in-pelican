@@ -32,7 +32,7 @@ SOCIAL = (('github', 'https://github.com/tevinjoseph'),
           ('facebook-square', 'https://www.facebook.com/tevin.joseph.92'),)
 
 THEME ='themes/pure' 
-COVER_IMG_URL = 'https://scontent-a-lga.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1526199_748445591869475_8342512785994427492_n.jpg?oh=f6d6dd2b21546315136bf9b2499466a1&oe=55446D5D'
+COVER_IMG_URL = 'https://scontent-a-lax.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/426744_521682301212473_788212376_n.jpg?oh=9a39ea0358dc079f831f9c57d6392ffe&oe=5509FA37'
 PROFILE_IMAGE_URL = 'https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10157186_658152540898781_7445448101037810379_n.jpg?oh=7bbd0644a226962d6015b69141cbc4ab&oe=550281BC&__gda__=1427357654_0634af07603f4a7d905940f8775c24c9'
 
 DEFAULT_PAGINATION = 10
