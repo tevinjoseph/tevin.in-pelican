@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tevin's Views, ">
+
+
+        <title>Executing bash commands via python // Tevin's Views // </title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./theme/css/pure.css">
+    <link rel="stylesheet" href="./theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="./author/tevin-joseph-k-o.html" title="See posts by Tevin Joseph K O">
+                        <img class="avatar" alt="Tevin Joseph K O" src="http://www.gravatar.com/avatar/2fec3b6b252e9b7b73960e15861a623b">
+                </a>
+                <h2 class="article-info">Tevin Joseph K O</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Thu 04 September 2014</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Executing bash commands via python</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="./tag/programming.html">Programming</a>
+                                <a class="post-category" href="./tag/python.html">Python</a>
+                                <a class="post-category" href="./tag/linux.html">Linux</a>
+                                <a class="post-category" href="./tag/bash.html">bash</a>
+                        </p>
+                </header>
+            </section>
+            <p>In python, executing bash commands can be done using <a href="https://docs.python.org/2/library/subprocess.html">subprocess </a> module. It’s pretty easy to use and it’s a powerful module. For simple commands,  we can use <a href="https://docs.python.org/2/library/subprocess.html#subprocess.call">subprocess.call</a></p>
+<p>Usage:</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s">&quot;command1&quot;</span><span class="p">)</span>
+
+<span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s">&quot;command1&quot;</span><span class="p">,</span> <span class="s">&quot;arg1&quot;</span><span class="p">,</span> <span class="s">&quot;arg2&quot;</span><span class="p">])</span>
+</pre></div>
+
+
+<p>Eg:</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s">&quot;ls&quot;</span><span class="p">,</span> <span class="s">&quot;-l&quot;</span><span class="p">])</span>
+<span class="n">total</span> <span class="mi">4</span>
+
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span> <span class="mi">1</span> <span class="n">tevin</span> <span class="n">tevin</span> <span class="mi">15</span> <span class="n">Sep</span> <span class="mi">3</span> <span class="mi">15</span><span class="p">:</span><span class="mi">29</span> <span class="n">test</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+
+
+<p>You can also use <a href="https://docs.python.org/2/library/subprocess.html#subprocess.check_call">subprocess.check_call</a>  and <a href="https://docs.python.org/2/library/subprocess.html#subprocess.check_output()">subprocess.check_output</a></p>
+<p><strong>Popen:</strong></p>
+<p>For more flexibility, you can use <a href="https://docs.python.org/2/library/subprocess.html#popen-constructor">Popen</a> . Using this you can store the output of command as well as any error occurred during command execution.</p>
+<p>Eg:</p>
+<div class="highlight"><pre>process = subprocess.Popen([&quot;ls&quot;, &quot;-l&quot;])
+(output, err) = process.communicate()
+</pre></div>
+
+
+<p><a href="https://docs.python.org/2/library/subprocess.html#subprocess.Popen.communicate">communicate</a>  method interacts with process and waits for the process to complete. It returns a tuple consisting of stdout and stderr.</p>
+<p><strong>Executing commands in background:</strong></p>
+<p>subprocess.Popen() only runs a process in the background if nothing in the python script depends on the output of the command being run. For example, the following code won’t be executed in background.</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="n">process</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">([</span><span class="s">&quot;ls&quot;</span><span class="p">,</span> <span class="s">&quot;-l&quot;</span><span class="p">],</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Thinking about what is subprocess.PIPE?</p>
+<p>subprocess.PIPE: Special value that can be used as the stdin, stdout or stderr argument to Popen and indicates that a pipe to the standard stream should be opened.</p>
+<p><strong>Changing directory(cd command):</strong></p>
+<p>You might be thinking that why ‘cd’? Why it can’t be executed using subprocess?</p>
+<p>If you use subprocess.call(“cd ..”), it will throw an error ‘No such file or directory’. It is because cd is a shell internal. So you can only call it as</p>
+<div class="highlight"><pre>subprocess.call(&#39;cd ..&#39;, shell=True)
+</pre></div>
+
+
+<p>But it is pointless to do so.  As no process can change another process’s working directory (again, at least on a UNIX-like OS, but as well on Windows), this call will have the subshell change its dir and exit immediately. Don’t worry you can change directory using os.chdir(path).</p>
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "tevinjosephko"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; Tevin's Views &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

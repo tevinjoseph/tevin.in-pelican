@@ -2,7 +2,7 @@ Title: Googling tips
 Date: 2014-05-09 10:00 
 Category: General
 Tags: googling, software development  
-Author: Tevin
+Author: Tevin Joseph K O
 Email:   tevinjosephko@gmail.com
 Summary:  Google is part of everyone’s life.  Especially people who are working in software industry, google is inevitable. If you can search google effectively, you can become a king in software industry. So, here are some tips and tricks that make your life easier :)
 

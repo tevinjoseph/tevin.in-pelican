@@ -2,7 +2,7 @@ Title: Become a successful software developer
 Date: 2014-09-15 10:00 
 Category: Programming 
 Tags: programming, software development  
-Author: Tevin
+Author: Tevin Joseph K O
 Email:	 tevinjosephko@gmail.com 
 Summary: Success is what everyone wants. It can only be achieved through sheer hard work. How can you become a successful software developer?  Well, it is not that hard. Practising a few small things can do wonders.
 
