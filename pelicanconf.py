@@ -37,6 +37,7 @@ PROFILE_IMAGE_URL = 'https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpf1/v/t1
 
 DEFAULT_PAGINATION = 10
 DISQUS_SITENAME ='tevinjosephko'
+GOOGLE_ANALYTICS = 'UA-57981880-1'
 RELATIVE_URLS = True
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['gravatar']
