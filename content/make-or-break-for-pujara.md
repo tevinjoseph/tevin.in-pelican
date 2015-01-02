@@ -4,11 +4,11 @@ Category: Cricket
 Tags: Pujara, Kohli, Dhoni, Saha, Kedar Jadhav, KL Rahul, Sydney Test  
 Author: Tevin Joseph K O
 Email:	 tevinjosephko@gmail.com 
-Summary: Sydney test will be in the headlines for many reasons, first test of Virat Kohli as India's full time skipper, Saha looks to step into the shoes of Dhoni as keeper. However, the test will be important for another individual who is none other than India's NO.3 [Cheteshwar Pujara](http://www.espncricinfo.com/india/content/player/32540.html). Pujara is the most talked and technically sound batsmen of current Indian team. What is so special about this young man? He has the ability to play long innings. When he hits hundred, he  makes sure it's big. He has scored 6 hundreds till date and four of them are 150+ scores with two double hundreds. ![enter image description here](http://static.sportskeeda.com/wp-content/uploads/2014/02/uy-2117571.jpg)
+Summary: Sydney test will be in the headlines for many reasons, first test of Virat Kohli as India's full time skipper, Saha looks to step into the shoes of Dhoni as keeper. However, the test will be important for another individual who is none other than India's NO.3 [Cheteshwar Pujara](http://www.espncricinfo.com/india/content/player/32540.html). Pujara is the most talked and technically sound batsmen of current Indian team. What is so special about this young man? He has the ability to play long innings. When he hits hundred, he  makes sure it's big. He has scored 6 hundreds till date and four of them are 150+ scores with two double hundreds. ![enter image description here](http://s.ndtvimg.com/images/content/2014/jul/806/pujara-out-sad.jpg)
 
 Sydney test will be in the headlines for many reasons, first test of Virat Kohli as India's full time skipper, Saha looks to step into the shoes of Dhoni as keeper. However, the test will be important for another individual who is none other than India's NO.3 [Cheteshwar Pujara](http://www.espncricinfo.com/india/content/player/32540.html). Pujara is the most talked and technically sound batsmen of current Indian team. What is so special about this young man? He has the ability to play long innings. When he hits hundred, he  makes sure it's big. He has scored 6 hundreds till date and four of them are 150+ scores with two double hundreds.
 
-![enter image description here](http://static.sportskeeda.com/wp-content/uploads/2014/02/uy-2117571.jpg)
+![enter image description here](http://s.ndtvimg.com/images/content/2014/jul/806/pujara-out-sad.jpg)
 
 Pujara has an exceptional average of 75 in home tests. Even though, his career average still looks really good (47.11) he averages only 28.35 in away tests. Have a look at his averages in last 3 series'
 
